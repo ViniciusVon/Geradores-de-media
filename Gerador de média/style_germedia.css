@@ -1,0 +1,112 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: black;
+    animation: fadeIn 6s linear infinite;
+}
+
+.box {
+    position:relative;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(29, 177, 0));
+    animation: rotate 4s linear infinite;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(0, 34, 145));
+    animation: rotate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background-color: gray;
+    z-index: 2;
+}
+
+@keyframes rotate{
+    0% {
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes fadeIn{
+    0% {
+        transform:fadeIn(0);
+    }
+    100%{
+        transform:fadeIn(1);
+    }
+}
+
+div#texto{
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    place-items: center;
+    color: #000000;
+    margin-block-start: -10px;
+}
+
+button{
+    background-color: rgb(110, 110, 110) ;
+    padding: 5px;
+
+    background-color: rgb(39, 211, 139);
+
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+
+    transition: all .7s ease;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: rgb(39, 211, 139);
+}
+
+header{
+    color: white;
+    background-color: rgb(182, 255, 227);
+    background: scroll;
+}
+
+footer{
+    color: white;
+    background-color: rgb(182, 255, 227);
+    background: fixed;
+}
+
+section#ger_media{
+    margin-left: 1000px;
+}
+
+input{
+    border-radius: 5px;
+    
+}

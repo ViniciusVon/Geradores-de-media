@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Média UnB</title>
+    <script src="script_germediaUnB.js"></script>
+    <link rel="stylesheet" href="style_germediaUnb.css">
+</head>
+<body>
+    <header>
+        <h2>Calculador de Média</h2>
+        <h2>de Cursos da UnB</h2>
+        <nav class="nav">
+            <button class="btn">Selecione o curso</button>
+                <div class="lista">
+                    <li class="item">Ciencia da Computação</li>
+                    <li class="item">Psicologia</li>
+                    <li class="item">Direito</li>
+                    <li class="item">Letras</li>
+                    <li class="item">Arquitetura e Urbanismo</li>
+                </div>
+        </nav>
+    </header>
+    <section>
+        <div class="box">
+            <span> 
+                <div id="bloco_CienciaComp">
+                    <div id="cabecalho">
+                    <h3> Ciência da Computação UnB</h3>
+                </div>
+                <div id="caixas1"> 
+                    <h5><strong>Coloque sua nota de Linguagens do ENEM 2022:</strong><input type="number" name="txtn1_1" id="txtn1_1"></h5>
+                    <h5><strong>Coloque sua nota de Ciências Humanas do ENEM 2022:</strong> <input  type="number" name="txtn2_1" id="txtn2_1">        </h5> 
+                    <h5><strong>Coloque sua nota de Ciências da Natureza do ENEM 2022:</strong> <input  type="number" name="txtn3_1" id="txtn3_1">    </h5>  
+                    <h5><strong>Coloque sua nota de Matemática do ENEM 2022:</strong>   <input  type="number" name="txtn4_1" id="txtn4_1">            </h5>
+                    <h5><strong>Coloque sua nota de Redação do ENEM 2022:</strong>   <input  type="number" name="txtn5_1" id="txtn5_1">               </h5> 
+                </div>
+                <div id="Bloco_Chamadas">
+                        <strong>Resultado 1ª Chamada. De acordo com a nota de corte de 2021.</strong><div id="butao1"> <button type="button" value="Calcular" onclick="calcular1()">Calcular</button> </div>
+                    <script src="script_germediaUnB.js">   
+                    </script>   
+                        <strong>Resultado 2ª Chamada. De acordo com a nota de corte de 2021.</strong><div id="butao2"> <button type="button" value="Calcular" onclick="calcular2()">Calcular</button> </div></div>
+                    <script src='script_germediaUnB.js'>      
+                    </script>
+                        <strong>Resultado 3ª Chamada. De acordo com a nota de corte de 2021.</strong><div id="butao3"> <button type="button" value="Calcular" onclick="calcular3()">Calcular</button> </div>
+                    <script src="script_germediaUnB.js">   
+                    </script>
+                        <strong>Resultado 4ª Chamada.De acordo com a nota de corte de 2021.</strong><div id="butao4"> <button type="button" value="Calcular" onclick="calcular4()">Calcular</button> </div>  
+                    <script src="script_germediaUnB.js">
+                    </script>
+                    <p id="resultado"></p>
+                </div>
+            </span>
+        </div>  
+    </section>
+    <footer>
+        <p>&copy; VonGlehn</p>
+    </footer>
+   
+</body>
+</html>

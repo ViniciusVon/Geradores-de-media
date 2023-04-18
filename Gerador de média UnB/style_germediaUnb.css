@@ -1,0 +1,142 @@
+body{
+    padding: 0px;
+    display: grid;
+    place-items: center;
+    margin: 0px;
+    min-height: 80vh;
+}
+
+.box{
+    position:relative;
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
+.box::before {
+    content: '';
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(78, 0, 129));
+    animation: rotate 4s linear infinite;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(229, 231, 86));
+    animation: rotate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background-color: gray;
+    z-index: 2;
+}
+
+@keyframes rotate{
+    0% {
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+div#bloco_1{
+    padding: 0px;
+    display: grid;
+    place-items: center;
+    margin: 0px;
+}
+
+div#Bloco_Chamadas{
+    padding: 0px;
+    display: grid;
+    place-items: center;
+    margin: 0px;
+    margin-block-start: 0px;
+}
+
+button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(77, 55, 117);
+    color: white;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+button:hover{
+    background-color: white;
+    color: rgb(77, 55, 117);
+}
+
+p{
+    margin: 10px;
+    background-color: rgb(100, 100, 100);
+    color: rgb(255, 254, 177);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input#txtn1_1{
+    margin-left: 85px;
+}
+
+input#txtn2_1{
+    margin-left: 40px;
+}
+
+input#txtn3_1{
+    margin-left: 25px;
+}
+
+input#txtn4_1{
+    margin-left: 78px;
+}
+
+input#txtn5_1{
+    margin-left: 95px;
+}
+
+li{
+    list-style: none;
+}
+
+.nav{
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.lista{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .3s;
+    background-color:rgb(255, 254, 177);
+    text-align: center;
+    width: 120px;
+}
+
+.lista li{
+    padding: 10px;
+}
+
+.lista li:hover{
+    background-color: lightgoldenrodyellow;
+}
+
+.newlist{
+    transform: scaleY(1);
+}
